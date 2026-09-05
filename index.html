@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yuvraj Singh Jadaun — Aurora Studios | Web Developer & AI Automation Expert</title>
+  
+  <!-- SEO & Meta Tags -->
+  <meta name="description" content="Yuvraj Singh Jadaun is a Web Developer, AI Automation Expert, and Creative Digital Specialist at Aurora Studios in Aligarh, UP, India. Building modern websites, voice AI calling agents, and viral digital experiences.">
+  <meta name="keywords" content="Yuvraj Singh Jadaun, Aurora Studios, Web Developer Aligarh, AI Automation Expert India, AI Calling Agents, Video Editing, Waffle Paradise Aligarh, Ace Factor Fitness, Fitless 2 Fitness">
+  <meta name="author" content="Yuvraj Singh Jadaun">
+  <meta name="theme-color" content="#080808">
+
+  <!-- OpenGraph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Yuvraj Singh Jadaun — Aurora Studios | Web Developer & AI Automation Expert">
+  <meta property="og:description" content="Building Digital Experiences That Get Attention. Modern websites, AI chatbots, voice calling agents, and viral creative campaigns.">
+  <meta property="og:image" content="assets/images/waffle_paradise_mockup.jpg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome 6.5.1 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Core Stylesheets -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+
+<body>
+  <!-- Ambient Cursor Glow Trail (Desktop) -->
+  <div id="cursorGlow" class="cursor-glow"></div>
+
+  <!-- Ambient Background Cyber Grid & Glow Mesh -->
+  <div class="cyber-grid"></div>
+  <div class="ambient-orb orb-blue"></div>
+  <div class="ambient-orb orb-purple"></div>
+  <div class="ambient-orb orb-pink"></div>
+
+  <!-- ============================================================
+       HEADER / STICKY NAVBAR
+  ============================================================ -->
+  <header id="siteHeader" class="site-header">
+    <div class="container nav-wrap">
+      <a href="#home" class="brand-logo" aria-label="Aurora Studios Home">
+        <div class="brand-logo-icon">
+          <svg class="aurora-svg-logo" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="auroraGradA" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#38BDF8"/>
+                <stop offset="50%" stop-color="#818CF8"/>
+                <stop offset="100%" stop-color="#EC4899"/>
+              </linearGradient>
+              <linearGradient id="auroraGradB" x1="100%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stop-color="#EC4899"/>
+                <stop offset="50%" stop-color="#A855F7"/>
+                <stop offset="100%" stop-color="#38BDF8"/>
+              </linearGradient>
+            </defs>
+            <!-- Futuristic Cyber Hexagon Outer Ring -->
+            <polygon points="24,3 43,13 43,35 24,45 5,35 5,13" stroke="url(#auroraGradA)" stroke-width="2.2" fill="rgba(17, 21, 34, 0.75)"/>
+            <!-- Geometric Radiant Core -->
+            <path d="M24 10L35 34H29.5L27 28.5H21L18.5 34H13L24 10Z" fill="url(#auroraGradB)"/>
+            <polygon points="24,18.5 21.5,24 26.5,24" fill="#07090e"/>
+            <!-- Cyber Diamond Accent -->
+            <polygon points="24,11 25.5,13.5 24,16 22.5,13.5" fill="#FFFFFF"/>
+          </svg>
+        </div>
+        <div class="brand-text">AURORA <span>STUDIOS</span></div>
+      </a>
+
+      <!-- Desktop Nav Menu -->
+      <nav class="nav-menu" aria-label="Main Navigation">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#work" class="nav-link">Work</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#process" class="nav-link">Process</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Right Action CTA -->
+      <div class="nav-actions">
+        <a href="#contact" class="btn-nav-cta">Let's Work Together</a>
+        <button id="mobileNavToggle" class="mobile-toggle" aria-label="Toggle Navigation Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div id="mobileNavDrawer" style="position: fixed; inset: 0; background: rgba(7,9,14,0.96); backdrop-filter: blur(20px); z-index: 99; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 26px; transform: translateY(-100%); transition: transform 0.4s var(--ease-out);">
+    <a href="#home" class="mobile-nav-link" style="font-family: var(--font-display); font-size: 1.6rem; font-weight: 700; color: #fff;">Home</a>
+    <a href="#services" class="mobile-nav-link" style="font-family: var(--font-display); font-size: 1.6rem; font-weight: 700; color: #fff;">Services</a>
+    <a href="#work" class="mobile-nav-link" style="font-family: var(--font-display); font-size: 1.6rem; font-weight: 700; color: #fff;">Work</a>
+    <a href="#skills" class="mobile-nav-link" style="font-family: var(--font-display); font-size: 1.6rem; font-weight: 700; color: #fff;">Skills</a>
+    <a href="#process" class="mobile-nav-link" style="font-family: var(--font-display); font-size: 1.6rem; font-weight: 700; color: #fff;">Process</a>
+    <a href="#about" class="mobile-nav-link" style="font-family: var(--font-display); font-size: 1.6rem; font-weight: 700; color: #fff;">About</a>
+    <a href="#contact" class="mobile-nav-link" style="font-family: var(--font-display); font-size: 1.6rem; font-weight: 700; color: #fff;">Contact</a>
+    <a href="#contact" class="btn-primary" style="margin-top: 16px;">Let's Work Together</a>
+  </div>
+
+  <main>
+    <!-- ============================================================
+         1. HERO SECTION
+    ============================================================ -->
+    <section id="home" class="hero-section">
+      <canvas id="particleCanvas"></canvas>
+
+      <div class="container hero-content">
+        <div class="hero-badge-row reveal">
+          <div class="status-chip">
+            <span class="dot"></span> Available for Selected Projects
+          </div>
+          <div class="location-chip">
+            <i class="fa-solid fa-location-dot" style="color: var(--accent-pink);"></i> Aligarh, UP, India
+          </div>
+        </div>
+
+        <div class="eyebrow reveal delay-1">HELLO, I'M</div>
+
+        <h1 class="hero-title reveal delay-2">
+          YUVRAJ SINGH <span class="gradient-text">JADAUN</span>
+        </h1>
+
+        <!-- Animated Cycling Title -->
+        <div class="hero-headline-animated reveal delay-3">
+          <span id="typewriterText"></span><span class="typewriter-cursor">|</span>
+        </div>
+
+        <p class="hero-desc reveal delay-4">
+          I help brands and businesses build powerful digital experiences using modern web development, AI automation, creative content, social media strategy and high-converting digital solutions.
+        </p>
+
+        <div class="hero-cta-group reveal delay-5">
+          <a href="#work" class="btn-primary shimmer-effect">
+            <i class="fa-solid fa-bolt"></i> VIEW MY WORK
+          </a>
+          <a href="#contact" class="btn-secondary">
+            LET'S WORK TOGETHER <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="scroll-cue reveal delay-6">
+          <div class="arrow-box scroll-indicator">
+            <i class="fa-solid fa-arrow-down" style="font-size: 0.8rem; color: var(--accent-cyan);"></i>
+          </div>
+          <span>SCROLL TO EXPLORE DIGITAL UNIVERSE</span>
+        </div>
+
+        <!-- Live Statistics Counter Strip -->
+        <div class="stats-strip reveal">
+          <div class="stat-item">
+            <div class="stat-number" data-count="25" data-suffix="+">0</div>
+            <div class="stat-label">Projects Completed</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-count="40" data-suffix="+">0</div>
+            <div class="stat-label">AI Automations Built</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-count="100" data-suffix="%">0</div>
+            <div class="stat-label">Client Satisfaction</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-count="5000" data-suffix="h+">0</div>
+            <div class="stat-label">Manual Hours Saved</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         2. SERVICES SECTION ("WHAT I DO")
+    ============================================================ -->
+    <section id="services" class="section">
+      <div class="container">
+        <div class="section-head center reveal">
+          <div class="eyebrow center">WHAT I DO</div>
+          <h2>Creative, Technical &amp; <span class="gradient-text">AI-Powered Solutions</span></h2>
+          <p class="section-subtitle">
+            Designed to help modern brands stand out, save valuable operational hours, and rapidly convert visitors into high-paying customers.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <!-- 1. Web Development -->
+          <div class="service-card reveal">
+            <div class="service-icon-box">
+              <i class="fa-solid fa-code"></i>
+            </div>
+            <h3 class="service-title">WEB DEVELOPMENT</h3>
+            <p class="service-desc">
+              Modern, fast, responsive and visually stunning websites designed to build credibility and convert visitors into customers.
+            </p>
+            <ul class="service-features">
+              <li class="feature-tag">Portfolio Websites</li>
+              <li class="feature-tag">Business Websites</li>
+              <li class="feature-tag">Landing Pages</li>
+              <li class="feature-tag">E-commerce</li>
+              <li class="feature-tag">UI/UX Design</li>
+              <li class="feature-tag">Website Redesign</li>
+            </ul>
+          </div>
+
+          <!-- 2. Video Editing -->
+          <div class="service-card reveal delay-1">
+            <div class="service-icon-box">
+              <i class="fa-solid fa-film"></i>
+            </div>
+            <h3 class="service-title">VIDEO EDITING</h3>
+            <p class="service-desc">
+              High-quality video editing designed for social media, advertisements, reels, and engaging digital content that holds attention.
+            </p>
+            <ul class="service-features">
+              <li class="feature-tag">Viral Reels</li>
+              <li class="feature-tag">Short-form Videos</li>
+              <li class="feature-tag">Promotional Videos</li>
+              <li class="feature-tag">Commercial Editing</li>
+              <li class="feature-tag">Social Content</li>
+            </ul>
+          </div>
+
+          <!-- 3. Thumbnail Design -->
+          <div class="service-card reveal delay-2">
+            <div class="service-icon-box">
+              <i class="fa-solid fa-photo-film"></i>
+            </div>
+            <h3 class="service-title">THUMBNAIL DESIGN</h3>
+            <p class="service-desc">
+              Attention-grabbing thumbnails engineered to increase click-through rates (CTR) and maximize content organic performance.
+            </p>
+            <ul class="service-features">
+              <li class="feature-tag">High-CTR Concepting</li>
+              <li class="feature-tag">YouTube Thumbnails</li>
+              <li class="feature-tag">Color Grading &amp; Lighting</li>
+              <li class="feature-tag">A/B Testing Assets</li>
+            </ul>
+          </div>
+
+          <!-- 4. Social Media Management -->
+          <div class="service-card reveal delay-3">
+            <div class="service-icon-box">
+              <i class="fa-solid fa-share-nodes"></i>
+            </div>
+            <h3 class="service-title">SOCIAL MEDIA MANAGEMENT</h3>
+            <p class="service-desc">
+              Strategic social media management focused on content, consistency, audience engagement, and sustainable brand growth.
+            </p>
+            <ul class="service-features">
+              <li class="feature-tag">Content Planning</li>
+              <li class="feature-tag">Posting Strategy</li>
+              <li class="feature-tag">Profile Optimization</li>
+              <li class="feature-tag">Engagement</li>
+              <li class="feature-tag">Brand Consistency</li>
+            </ul>
+          </div>
+
+          <!-- 5. Post Designing -->
+          <div class="service-card reveal">
+            <div class="service-icon-box">
+              <i class="fa-solid fa-palette"></i>
+            </div>
+            <h3 class="service-title">POST DESIGNING</h3>
+            <p class="service-desc">
+              Creative and professional social media posts, visual branding, and marketing creatives that make modern brands stand out.
+            </p>
+            <ul class="service-features">
+              <li class="feature-tag">Instagram Posts</li>
+              <li class="feature-tag">Promotional Creatives</li>
+              <li class="feature-tag">Carousel Infographics</li>
+              <li class="feature-tag">Brand Graphics</li>
+              <li class="feature-tag">Marketing Creatives</li>
+            </ul>
+          </div>
+
+          <!-- 6. Commercials & Ads -->
+          <div class="service-card reveal delay-1">
+            <div class="service-icon-box">
+              <i class="fa-solid fa-bullhorn"></i>
+            </div>
+            <h3 class="service-title">COMMERCIALS &amp; ADS</h3>
+            <p class="service-desc">
+              High-impact commercial advertisements and direct-response promotional creatives designed to grab attention and drive action.
+            </p>
+            <ul class="service-features">
+              <li class="feature-tag">Paid Social Ads</li>
+              <li class="feature-tag">Brand Storytelling</li>
+              <li class="feature-tag">Conversion Hooks</li>
+              <li class="feature-tag">Multi-Platform Scaling</li>
+            </ul>
+          </div>
+
+          <!-- 7. AI Chatbots -->
+          <div class="service-card reveal delay-2">
+            <div class="service-icon-box">
+              <i class="fa-solid fa-robot"></i>
+            </div>
+            <h3 class="service-title">AI CHATBOTS</h3>
+            <p class="service-desc">
+              Smart AI chatbots that help businesses automate conversations, qualify inbound leads, and provide 24/7 customer support.
+            </p>
+            <ul class="service-features">
+              <li class="feature-tag">Website Chatbots</li>
+              <li class="feature-tag">Lead Generation Bots</li>
+              <li class="feature-tag">Customer Support Bots</li>
+              <li class="feature-tag">AI Assistants</li>
+            </ul>
+          </div>
+
+          <!-- 8. AI Calling Agents -->
+          <div class="service-card reveal delay-3">
+            <div class="service-icon-box">
+              <i class="fa-solid fa-headset"></i>
+            </div>
+            <h3 class="service-title">AI CALLING AGENTS</h3>
+            <p class="service-desc">
+              Human-grade AI voice agents capable of handling phone calls, qualifying leads, answering questions, and automating business calls.
+            </p>
+            <ul class="service-features">
+              <li class="feature-tag">Lead Qualification</li>
+              <li class="feature-tag">Inbound &amp; Outbound Calls</li>
+              <li class="feature-tag">Appointment Booking</li>
+              <li class="feature-tag">Automated Follow-ups</li>
+            </ul>
+          </div>
+
+          <!-- 9. AI Automations -->
+          <div class="service-card reveal">
+            <div class="service-icon-box">
+              <i class="fa-solid fa-bolt"></i>
+            </div>
+            <h3 class="service-title">AI AUTOMATIONS</h3>
+            <p class="service-desc">
+              Custom automation systems that connect apps, eliminate repetitive tasks, and help businesses operate with maximum efficiency.
+            </p>
+            <ul class="service-features">
+              <li class="feature-tag">Workflow Automation</li>
+              <li class="feature-tag">Lead Pipelines</li>
+              <li class="feature-tag">CRM Sync</li>
+              <li class="feature-tag">Email Automation</li>
+              <li class="feature-tag">Business Process Ops</li>
+            </ul>
+          </div>
+
+          <!-- 10. UGC Reels -->
+          <div class="service-card reveal delay-1">
+            <div class="service-icon-box">
+              <i class="fa-solid fa-video"></i>
+            </div>
+            <h3 class="service-title">UGC REELS</h3>
+            <p class="service-desc">
+              Authentic, engaging, and high-converting UGC-style reels crafted specifically for modern brands, DTC products, and social ads.
+            </p>
+            <ul class="service-features">
+              <li class="feature-tag">Authentic Creator Style</li>
+              <li class="feature-tag">Product Demos</li>
+              <li class="feature-tag">Social Ad Formats</li>
+              <li class="feature-tag">High ROAS Formulas</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         3. FEATURED WORK SECTION
+    ============================================================ -->
+    <section id="work" class="section" style="background: rgba(10, 13, 20, 0.5);">
+      <div class="container">
+        <div class="section-head center reveal">
+          <div class="eyebrow center">FEATURED WORK</div>
+          <h2>A Selection of <span class="gradient-text">Digital Experiences</span> &amp; AI Systems</h2>
+          <p class="section-subtitle">
+            Explore recent client websites, full-scale automation workflows, and high-converting creative campaigns built by Aurora Studios.
+          </p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="portfolio-filter-tabs reveal">
+          <button type="button" class="filter-btn active" data-filter="all">All Projects</button>
+          <button type="button" class="filter-btn" data-filter="websites">Websites &amp; Apps</button>
+          <button type="button" class="filter-btn" data-filter="ai-automation">AI &amp; Automation</button>
+          <button type="button" class="filter-btn" data-filter="ads-commercials">Ads &amp; Video</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div id="portfolioProjectsGrid" class="projects-grid">
+          <!-- Injected via JavaScript from PORTFOLIO_PROJECTS dataset -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         4. SKILLS SECTION ("MY DIGITAL TOOLKIT")
+    ============================================================ -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-head center reveal">
+          <div class="eyebrow center">MY DIGITAL TOOLKIT</div>
+          <h2>Mastered Technologies &amp; <span class="gradient-text">Creative Disciplines</span></h2>
+          <p class="section-subtitle">
+            A comprehensive suite of modern frameworks, AI APIs, creative editing software, and marketing funnels.
+          </p>
+        </div>
+
+        <!-- Category Nav -->
+        <div class="skills-nav-tabs reveal">
+          <button type="button" class="skill-tab-btn active" data-category="all">All Skills</button>
+          <button type="button" class="skill-tab-btn" data-category="web">Web Development</button>
+          <button type="button" class="skill-tab-btn" data-category="ai">AI &amp; Automation</button>
+          <button type="button" class="skill-tab-btn" data-category="creative">Creative &amp; Video</button>
+          <button type="button" class="skill-tab-btn" data-category="marketing">Marketing &amp; Growth</button>
+        </div>
+
+        <!-- Animated Badges -->
+        <div id="skillsBadgeContainer" class="skills-container reveal">
+          <!-- Injected via JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         5. INTERACTIVE AI AGENT SANDBOX
+    ============================================================ -->
+    <section id="ai-demo" class="section" style="background: rgba(13, 17, 26, 0.6);">
+      <div class="container">
+        <div class="section-head center reveal">
+          <div class="eyebrow center">TEST DRIVE AI</div>
+          <h2>Try the <span class="gradient-text">Aurora AI Assistant</span> Live</h2>
+          <p class="section-subtitle">
+            Experience our conversational chatbot simulator. Ask about our services, pricing, or request a project quotation.
+          </p>
+        </div>
+
+        <!-- Chatbot Simulator Widget -->
+        <div class="chatbot-widget-container reveal">
+          <div class="chatbot-header">
+            <div class="chatbot-title-info">
+              <div class="bot-avatar">
+                <i class="fa-solid fa-robot"></i>
+              </div>
+              <div>
+                <h4 style="font-size: 1rem; color: #fff; margin-bottom: 2px;">Aurora AI Smart Agent</h4>
+                <div style="display: flex; align-items: center; gap: 6px; font-size: 0.76rem; color: #34d399; font-family: var(--font-mono);">
+                  <span style="width: 6px; height: 6px; border-radius: 50%; background: #34d399;"></span> Online &amp; Ready
+                </div>
+              </div>
+            </div>
+            <span class="status-chip" style="font-size: 0.72rem;">Live Sandbox</span>
+          </div>
+
+          <div id="chatbotMessages" class="chatbot-messages-area">
+            <div class="chat-bubble bot">
+              👋 Hey there! I'm Aurora AI, Yuvraj's digital assistant. How can I help you elevate your brand today? Feel free to ask about our web development, AI calling agents, or video packages!
+            </div>
+          </div>
+
+          <div class="chatbot-quick-prompts">
+            <button type="button" class="quick-prompt-btn">"What services do you offer?"</button>
+            <button type="button" class="quick-prompt-btn">"How do AI Calling Agents work?"</button>
+            <button type="button" class="quick-prompt-btn">"Tell me about web dev pricing"</button>
+            <button type="button" class="quick-prompt-btn">"How can I contact Yuvraj?"</button>
+          </div>
+
+          <div class="chatbot-input-bar">
+            <input type="text" id="chatbotInput" class="chatbot-input" placeholder="Type a question or choose a prompt above..." autocomplete="off">
+            <button type="button" id="btnSendChat" class="btn-send-chat" aria-label="Send message">
+              <i class="fa-solid fa-paper-plane"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         6. VIDEO REEL SHOWCASE & USER UPLOAD CENTER
+    ============================================================ -->
+    <section id="videos" class="section">
+      <div class="container">
+        <div class="section-head center reveal">
+          <div class="eyebrow center">VIDEO REELS &amp; COMMERCIALS</div>
+          <h2>Visual Motion That <span class="gradient-text">Captivates &amp; Converts</span></h2>
+          <p class="section-subtitle">
+            Watch sample video commercial edits below, or preview your custom video reel directly inside our player!
+          </p>
+        </div>
+
+        <div id="videoShowcaseGrid" class="video-showcase-grid">
+          <!-- Injected via video-player.js -->
+        </div>
+
+        <!-- Custom Video Upload / Drop Zone -->
+        <div id="videoDropZone" class="video-drop-zone reveal">
+          <i class="fa-solid fa-cloud-arrow-up" style="font-size: 2.4rem; color: var(--accent-indigo); margin-bottom: 12px;"></i>
+          <h4 style="font-size: 1.15rem; margin-bottom: 6px; color: #fff;">Have video samples to add? Drop them here!</h4>
+          <p style="color: var(--text-secondary); font-size: 0.88rem; max-width: 540px; margin: 0 auto 16px;">
+            Drag &amp; drop any <strong>.mp4, .webm, or .mov</strong> file here to preview your reel in our video player lightbox immediately.
+          </p>
+          <button type="button" class="btn-secondary" style="padding: 10px 24px; font-size: 0.88rem;">
+            <i class="fa-solid fa-folder-open"></i> Browse Video File
+          </button>
+          <input type="file" id="customVideoInput" accept="video/*" style="display: none;">
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         7. PROCESS SECTION ("HOW I WORK")
+    ============================================================ -->
+    <section id="process" class="section" style="background: rgba(10, 13, 20, 0.5);">
+      <div class="container">
+        <div class="section-head center reveal">
+          <div class="eyebrow center">HOW I WORK</div>
+          <h2>A Proven 5-Step Formula For <span class="gradient-text">Digital Success</span></h2>
+          <p class="section-subtitle">
+            From deep discovery to exponential scaling, every project follows a streamlined, milestone-driven roadmap.
+          </p>
+        </div>
+
+        <div class="process-timeline">
+          <!-- Step 1 -->
+          <div class="process-card reveal">
+            <div class="process-step-node">01</div>
+            <h3 class="process-name">DISCOVER</h3>
+            <p class="process-desc">Understanding your business, target audience, competitive landscape and core revenue goals.</p>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="process-card reveal delay-1">
+            <div class="process-step-node">02</div>
+            <h3 class="process-name">STRATEGIZE</h3>
+            <p class="process-desc">Formulating the digital architecture, AI workflows, creative direction, and conversion funnels.</p>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="process-card reveal delay-2">
+            <div class="process-step-node">03</div>
+            <h3 class="process-name">CREATE</h3>
+            <p class="process-desc">High-precision coding, UI design, AI agent training, and cinematic video editing &amp; asset production.</p>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="process-card reveal delay-3">
+            <div class="process-step-node">04</div>
+            <h3 class="process-name">OPTIMIZE</h3>
+            <p class="process-desc">Speed optimization, conversion testing, A/B iterations, and end-to-end webhook validation.</p>
+          </div>
+
+          <!-- Step 5 -->
+          <div class="process-card reveal delay-4">
+            <div class="process-step-node">05</div>
+            <h3 class="process-name">GROW</h3>
+            <p class="process-desc">Deploying digital systems, scaling paid creatives, and multiplying customer reach automatically.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         8. ABOUT ME SECTION
+    ============================================================ -->
+    <section id="about" class="section">
+      <div class="container about-grid">
+        <!-- Profile Card -->
+        <div class="profile-card reveal">
+          <div class="profile-header">
+            <div class="profile-avatar-box">
+              <div class="profile-avatar-inner">
+                <i class="fa-solid fa-user-ninja"></i>
+              </div>
+            </div>
+            <div>
+              <h3 class="profile-name">Yuvraj Singh Jadaun</h3>
+              <div class="profile-role">Founder &bull; Aurora Studios</div>
+              <div style="font-size: 0.8rem; color: var(--text-muted); margin-top: 4px;">Aligarh, Uttar Pradesh, India 📍</div>
+            </div>
+          </div>
+
+          <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.7; margin-bottom: 16px;">
+            "My mission is simple: eliminate the friction between innovative ideas and real-world business growth using technology and creative storytelling."
+          </p>
+
+          <div class="profile-pill-list">
+            <span class="profile-pill"><i class="fa-solid fa-code" style="color: var(--accent-cyan);"></i> Web Development</span>
+            <span class="profile-pill"><i class="fa-solid fa-robot" style="color: var(--accent-indigo);"></i> AI Automation</span>
+            <span class="profile-pill"><i class="fa-solid fa-film" style="color: var(--accent-pink);"></i> Creative Content</span>
+            <span class="profile-pill"><i class="fa-solid fa-chart-line" style="color: #34d399;"></i> Digital Growth</span>
+          </div>
+        </div>
+
+        <!-- About Copy & Story -->
+        <div class="reveal delay-1">
+          <div class="eyebrow">ABOUT ME</div>
+          <h2 style="margin-bottom: 22px;">
+            Combining Code, Creativity &amp; <span class="gradient-text">Intelligent Automation</span>
+          </h2>
+
+          <p style="color: var(--text-secondary); font-size: 1.05rem; line-height: 1.75; margin-bottom: 18px;">
+            I'm <strong>Yuvraj Singh Jadaun</strong>, a web developer and AI-powered digital creator focused on helping businesses build a strong, high-converting online presence.
+          </p>
+
+          <p style="color: var(--text-secondary); font-size: 1.05rem; line-height: 1.75; margin-bottom: 18px;">
+            I combine <strong style="color: var(--accent-cyan);">Web Development</strong>, <strong style="color: var(--accent-pink);">Creative Design</strong>, <strong style="color: var(--accent-indigo);">Video Content</strong>, and <strong style="color: #34d399;">AI Automation</strong> to create complete, end-to-end digital solutions for modern businesses.
+          </p>
+
+          <p style="color: var(--text-secondary); font-size: 1.05rem; line-height: 1.75; margin-bottom: 32px;">
+            Instead of focusing on just one isolated service, I bring together technology, creativity and automation under one roof to help brands save time, get more attention, and grow significantly faster.
+          </p>
+
+          <div style="display: flex; gap: 16px; flex-wrap: wrap;">
+            <a href="#contact" class="btn-primary">
+              <i class="fa-solid fa-comments"></i> Start A Conversation
+            </a>
+            <a href="https://www.linkedin.com/in/yuvraj-singh-jadaun-275a92432/" target="_blank" rel="noopener" class="btn-secondary">
+              <i class="fa-brands fa-linkedin"></i> View LinkedIn
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         9. WHY WORK WITH ME ("WHY AURORA STUDIOS?")
+    ============================================================ -->
+    <section class="section" style="background: rgba(10, 13, 20, 0.5);">
+      <div class="container">
+        <div class="section-head center reveal">
+          <div class="eyebrow center">WHY CHOOSE US</div>
+          <h2>Why Partner With <span class="gradient-text">Aurora Studios?</span></h2>
+          <p class="section-subtitle">
+            We deliver results, not just deliverables. Here is what sets our studio apart from traditional agencies.
+          </p>
+        </div>
+
+        <div class="why-grid">
+          <!-- 1. Modern Solutions -->
+          <div class="why-card reveal">
+            <span class="why-icon">⚡</span>
+            <h3 class="why-title">MODERN SOLUTIONS</h3>
+            <p class="why-desc">
+              Using the latest web architectures, lightning-fast frameworks, and cutting-edge creative approaches that give you an unfair advantage.
+            </p>
+          </div>
+
+          <!-- 2. AI-Powered -->
+          <div class="why-card reveal delay-1">
+            <span class="why-icon">🤖</span>
+            <h3 class="why-title">AI-POWERED</h3>
+            <p class="why-desc">
+              Leveraging intelligent AI agents, voice callers, and autonomous pipelines to build smarter, self-sustaining business systems.
+            </p>
+          </div>
+
+          <!-- 3. Creative Thinking -->
+          <div class="why-card reveal delay-2">
+            <span class="why-icon">💡</span>
+            <h3 class="why-title">CREATIVE THINKING</h3>
+            <p class="why-desc">
+              Crafting content, thumbnails, and viral reels designed specifically to stop the scroll and turn viewers into loyal brand advocates.
+            </p>
+          </div>
+
+          <!-- 4. Multi-Skill Expertise -->
+          <div class="why-card reveal delay-3">
+            <span class="why-icon">🚀</span>
+            <h3 class="why-title">MULTI-SKILL EXPERTISE</h3>
+            <p class="why-desc">
+              Web development, AI automation, video editing, graphics, and social strategy unified seamlessly under one visionary partner.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         10. FULL-WIDTH CTA BANNER
+    ============================================================ -->
+    <section class="section">
+      <div class="container">
+        <div class="cta-banner reveal">
+          <div class="eyebrow center" style="color: var(--accent-pink);">READY TO SCALE?</div>
+          <h2>
+            LET'S BUILD SOMETHING <br><span class="gradient-text">AMAZING TOGETHER.</span>
+          </h2>
+          <p style="color: var(--text-secondary); font-size: 1.15rem; max-width: 620px; margin: 0 auto 36px; line-height: 1.7;">
+            Have a project, idea, or business that needs a stronger digital presence and AI automation? Let's create something people can't ignore.
+          </p>
+          <a href="#contact" class="btn-primary shimmer-effect" style="font-size: 1.1rem; padding: 18px 44px;">
+            <i class="fa-solid fa-rocket"></i> START A PROJECT NOW
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         11. CONTACT SECTION ("LET'S TALK")
+    ============================================================ -->
+    <section id="contact" class="section" style="background: rgba(8, 10, 16, 0.8);">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="eyebrow">LET'S TALK</div>
+          <h2>Get In Touch &bull; <span class="gradient-text">Launch Your Project</span></h2>
+          <p class="section-subtitle">
+            Fill out the form below or connect directly via WhatsApp, phone, or LinkedIn. We typically respond within minutes!
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Info Cards -->
+          <div class="contact-info-card reveal">
+            <h3 style="font-size: 1.45rem; margin-bottom: 24px; color: #fff;">Direct Channels</h3>
+
+            <!-- Phone / WhatsApp -->
+            <div class="contact-detail-item">
+              <div class="contact-icon">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div>
+                <div class="contact-label">Phone &bull; WhatsApp</div>
+                <div class="contact-val">
+                  <a href="tel:+919761203713" style="color: #fff; text-decoration: underline; text-underline-offset: 4px;">+91 9761203713</a>
+                </div>
+                <a href="https://wa.me/919761203713?text=Hi%20Yuvraj!%20I'm%20interested%20in%20working%20with%20Aurora%20Studios." target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 6px; font-size: 0.82rem; color: #34d399; margin-top: 4px; font-weight: 600;">
+                  <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp &rarr;
+                </a>
+              </div>
+            </div>
+
+            <!-- Email -->
+            <div class="contact-detail-item">
+              <div class="contact-icon">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div>
+                <div class="contact-label">Email Address</div>
+                <div class="contact-val">
+                  <a href="mailto:thakuryuvrajsingh008@gmail.com" style="color: #fff; word-break: break-all;">thakuryuvrajsingh008@gmail.com</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- LinkedIn -->
+            <div class="contact-detail-item">
+              <div class="contact-icon">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </div>
+              <div>
+                <div class="contact-label">LinkedIn Profile</div>
+                <div class="contact-val">
+                  <a href="https://www.linkedin.com/in/yuvraj-singh-jadaun-275a92432/" target="_blank" rel="noopener" style="color: var(--accent-cyan);">yuvraj-singh-jadaun &rarr;</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Location -->
+            <div class="contact-detail-item" style="margin-bottom: 0;">
+              <div class="contact-icon">
+                <i class="fa-solid fa-map-location-dot"></i>
+              </div>
+              <div>
+                <div class="contact-label">Location / Studio HQ</div>
+                <div class="contact-val">Aligarh, Uttar Pradesh, India</div>
+                <div style="font-size: 0.82rem; color: var(--text-muted); margin-top: 2px;">Available for remote clients globally</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Contact Form -->
+          <div class="contact-form-card reveal delay-1">
+            <h3 style="font-size: 1.45rem; margin-bottom: 20px; color: #fff;">Send A Project Message</h3>
+
+            <form id="contactForm">
+              <div class="form-grid">
+                <div class="form-group">
+                  <label for="formName" class="form-label">Your Name *</label>
+                  <input type="text" id="formName" class="form-control" placeholder="John Doe" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="formEmail" class="form-label">Your Email *</label>
+                  <input type="email" id="formEmail" class="form-control" placeholder="john@company.com" required>
+                </div>
+              </div>
+
+              <div class="form-grid">
+                <div class="form-group">
+                  <label for="formBusiness" class="form-label">Business / Brand Name</label>
+                  <input type="text" id="formBusiness" class="form-control" placeholder="Acme Studios">
+                </div>
+
+                <div class="form-group">
+                  <label for="formService" class="form-label">Service Needed *</label>
+                  <select id="formService" class="form-control" required style="background: var(--bg-dark); color: #fff;">
+                    <option value="" disabled selected>Select a Service</option>
+                    <option value="Web Development & Apps">Web Development &amp; Apps</option>
+                    <option value="AI Voice Calling Agent">AI Voice Calling Agent</option>
+                    <option value="AI Chatbots & Assistants">AI Chatbots &amp; Assistants</option>
+                    <option value="Workflow Automations (CRM/Zapier)">Workflow Automations (CRM/Zapier)</option>
+                    <option value="Viral Video Editing & Reels">Viral Video Editing &amp; Reels</option>
+                    <option value="Thumbnail & Post Designing">Thumbnail &amp; Post Designing</option>
+                    <option value="Social Media Management">Social Media Management</option>
+                    <option value="Full Digital Transformation Suite">Full Digital Transformation Suite</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="formBudget" class="form-label">Project Budget (Approx)</label>
+                <select id="formBudget" class="form-control" style="background: var(--bg-dark); color: #fff;">
+                  <option value="₹10,000 - ₹25,000">₹10,000 - ₹25,000 (Starter)</option>
+                  <option value="₹25,000 - ₹60,000" selected>₹25,000 - ₹60,000 (Standard Growth)</option>
+                  <option value="₹60,000 - ₹1,50,000">₹60,000 - ₹1,50,000 (Scale &amp; AI Agents)</option>
+                  <option value="₹1,50,000+">₹1,50,000+ (Enterprise)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="formDetails" class="form-label">Project Details &amp; Goals *</label>
+                <textarea id="formDetails" class="form-control" rows="4" placeholder="Tell us about your brand, what you'd like to build or automate, and any specific timelines..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn-primary" style="width: 100%;">
+                <i class="fa-solid fa-paper-plane"></i> SEND MESSAGE &amp; CONNECT
+              </button>
+
+              <div id="formStatusMessage" style="display: none;"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="#home" class="brand-logo" style="margin-bottom: 16px;">
+            <div class="brand-logo-icon">
+              <svg class="aurora-svg-logo" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Futuristic Cyber Hexagon Outer Ring -->
+                <polygon points="24,3 43,13 43,35 24,45 5,35 5,13" stroke="url(#auroraGradA)" stroke-width="2.2" fill="rgba(17, 21, 34, 0.75)"/>
+                <!-- Geometric Radiant Core -->
+                <path d="M24 10L35 34H29.5L27 28.5H21L18.5 34H13L24 10Z" fill="url(#auroraGradB)"/>
+                <polygon points="24,18.5 21.5,24 26.5,24" fill="#07090e"/>
+                <!-- Cyber Diamond Accent -->
+                <polygon points="24,11 25.5,13.5 24,16 22.5,13.5" fill="#FFFFFF"/>
+              </svg>
+            </div>
+            <div class="brand-text">AURORA <span>STUDIOS</span></div>
+          </a>
+          <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.65; max-width: 380px;">
+            Building websites, creative viral content, and AI-powered digital automation systems that demand attention.
+          </p>
+        </div>
+
+        <div>
+          <h4 style="font-size: 1.1rem; color: #fff; margin-bottom: 18px;">Navigation</h4>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 10px; font-size: 0.92rem; color: var(--text-secondary);">
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#services" class="nav-link">Services</a></li>
+            <li><a href="#work" class="nav-link">Featured Work</a></li>
+            <li><a href="#skills" class="nav-link">Skills Matrix</a></li>
+            <li><a href="#process" class="nav-link">How I Work</a></li>
+            <li><a href="#about" class="nav-link">About Yuvraj</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 style="font-size: 1.1rem; color: #fff; margin-bottom: 18px;">Connect</h4>
+          <div style="display: flex; gap: 12px; margin-bottom: 18px;">
+            <a href="https://www.linkedin.com/in/yuvraj-singh-jadaun-275a92432/" target="_blank" rel="noopener" class="btn-icon" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="https://wa.me/919761203713" target="_blank" rel="noopener" class="btn-icon" aria-label="WhatsApp">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="mailto:thakuryuvrajsingh008@gmail.com" class="btn-icon" aria-label="Email">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+            <a href="tel:+919761203713" class="btn-icon" aria-label="Phone">
+              <i class="fa-solid fa-phone"></i>
+            </a>
+          </div>
+          <p style="font-size: 0.85rem; color: var(--text-muted); font-family: var(--font-mono);">
+            Founder: Yuvraj Singh Jadaun<br>
+            HQ: Aligarh, UP, India
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Aurora Studios &bull; Yuvraj Singh Jadaun. All rights reserved.
+        </div>
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span style="font-family: var(--font-mono); font-size: 0.78rem; color: var(--accent-cyan);">Engineered for Peak Performance</span>
+          <span class="pulse-beacon"></span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       PROJECT CASE STUDY MODAL
+  ============================================================ -->
+  <div id="projectModal" class="modal-backdrop" role="dialog" aria-modal="true">
+    <div class="modal-container">
+      <button type="button" id="btnCloseProjectModal" class="modal-close-btn" aria-label="Close modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div id="projectModalBody" class="modal-body">
+        <!-- Rendered dynamically from portfolio-data.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       VIDEO PLAYER MODAL
+  ============================================================ -->
+  <div id="videoModal" class="modal-backdrop" role="dialog" aria-modal="true">
+    <div class="modal-container" style="max-width: 840px; background: #07090e;">
+      <button type="button" id="btnCloseVideoModal" class="modal-close-btn" aria-label="Close video modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div style="padding: 24px;">
+        <div style="border-radius: var(--radius-lg); overflow: hidden; background: #000; margin-bottom: 20px;">
+          <video id="modalVideoPlayer" controls style="width: 100%; max-height: 520px; display: block;"></video>
+        </div>
+        <h3 id="videoModalTitle" style="font-size: 1.4rem; color: #fff; margin-bottom: 8px;">Video Title</h3>
+        <p id="videoModalDesc" style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6;">Description</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript Modules -->
+  <script src="js/portfolio-data.js"></script>
+  <script src="js/particles.js"></script>
+  <script src="js/chatbot-demo.js"></script>
+  <script src="js/video-player.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
