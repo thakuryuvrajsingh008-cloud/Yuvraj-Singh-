@@ -13,12 +13,12 @@ class AuroraChatbotDemo {
     if (!this.messagesContainer || !this.inputField) return;
 
     this.knowledgeBase = {
-      services: "At Aurora Studios, Yuvraj offers: 🚀 Modern Web & Web App Development, 🤖 Custom AI Chatbots, 📞 AI Calling/Voice Agents, ⚡ Workflow Automations (Make/Zapier/CRM), 🎬 Viral Video Editing & UGC Reels, and 🎨 High-CTR Thumbnail & Post Design.",
-      pricing: "Pricing depends on project scope and deliverables. Web development starts from competitive agency packages, and AI automation workflows are tailored to your business ROI. You can get an instant custom quote using our contact form below or on WhatsApp (+91 9761203713)!",
-      calling: "Our AI Voice Calling Agents are human-grade voice AI bots capable of handling both inbound customer inquiries and outbound lead qualification calls, booking live Google Calendar appointments, and transcribing conversations directly into your CRM.",
+      services: "At Aurora Studios, Yuvraj offers: 🚀 Modern Web & Web App Development, 🎬 Viral Video Editing & UGC Reels, 🎨 High-CTR Thumbnail & Post Design, 📱 Social Media Management, and 💼 High-Impact Commercials & Ads.",
+      pricing: "Pricing depends on project scope and deliverables. Web development and video production packages are tailored to your business goals. You can get an instant custom quote using our contact form below or on WhatsApp (+91 9761203713)!",
+      calling: "We build high-converting landing pages, creative video commercials, and digital branding assets designed to convert visitors into paying clients.",
       websites: "We build ultra-fast, modern, responsive websites and web applications tailored for conversion. Check out our featured work above including The Waffle Paradise Cafe, Ace Factor Fitness, and Fitless 2 Fitness!",
       contact: "You can reach Yuvraj directly via WhatsApp/Phone at +91 9761203713, email at thakuryuvrajsingh008@gmail.com, or through LinkedIn. Based in Aligarh, UP, serving global clients!",
-      default: "That sounds like a great project! Yuvraj specializes in combining web development, creative design, and AI automation to help brands scale fast. Would you like to schedule a quick 15-minute discovery call or discuss project requirements?"
+      default: "That sounds like a great project! Yuvraj specializes in combining web development, creative design, and viral video editing to help brands scale fast. Would you like to schedule a quick discovery chat or discuss project requirements?"
     };
 
     this.init();

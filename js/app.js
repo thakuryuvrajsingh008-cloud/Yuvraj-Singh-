@@ -82,10 +82,10 @@ function initTypewriter() {
   if (!targetElement) return;
 
   const phrases = [
-    "WEB DEVELOPER",
-    "AI AUTOMATION EXPERT",
-    "CREATIVE DIGITAL SPECIALIST",
-    "VOICE AI ARCHITECT",
+    "FULL-STACK WEB DEVELOPER",
+    "CREATIVE UI/UX DESIGNER",
+    "VIDEO EDITOR & CREATOR",
+    "DIGITAL BRAND STRATEGIST",
     "HIGH-CONVERTING DESIGNER"
   ];
 

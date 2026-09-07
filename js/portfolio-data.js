@@ -80,52 +80,28 @@ const PORTFOLIO_PROJECTS = [
     isSampleCodeAvailable: true
   },
   {
-    id: "ai-lead-automation",
-    title: "AI Lead Automation Engine",
-    client: "Enterprise SaaS & B2B Clients",
-    category: "ai-automation",
-    categoryLabel: "AI & Automation",
-    subtitle: "Autonomous Lead Capture, Qualification & CRM Pipeline Sync",
-    description: "Architected an autonomous AI pipeline that instantly captures inbound leads from web forms, qualifies budget & intent via AI, and syncs to CRM with automated follow-ups.",
-    fullDescription: "Engineered multi-channel AI automation workflows utilizing custom webhooks, Make/Zapier, OpenAI/Gemini LLMs, and CRM integrations. Reduces response time from 4 hours to under 20 seconds, boosting lead qualification conversion by 4x.",
-    image: "assets/images/ai_automation_mockup.jpg",
-    tags: ["AI Workflows", "Lead Qualification", "CRM Sync", "Webhook Engine"],
+    id: "cinematic-brand-commercial",
+    title: "Cinematic Brand Commercials",
+    client: "Lifestyle & Fitness Brands",
+    category: "ads-commercials",
+    categoryLabel: "Ads & Video",
+    subtitle: "High-Energy 4K Commercial Edits & Product Showcases",
+    description: "Produced cinematic brand films with dynamic speed ramps, sound design, sound effects (SFX), and color grading to build premium brand equity.",
+    fullDescription: "Delivered complete commercial editing workflows including multi-cam synchronization, custom motion typography, beat-matched transitions, audio mastering, and export optimization across 16:9 widescreen and 9:16 vertical formats.",
+    image: "assets/images/ace_factor_mockup.jpg",
+    tags: ["Commercial Video", "Color Grading", "Sound Design", "Motion Graphics"],
     metrics: [
-      { label: "Response Speed", value: "<20s" },
-      { label: "Lead Conversion", value: "+380%" },
-      { label: "Manual Work Saved", value: "25+ hrs/wk" }
+      { label: "Retention Rate", value: "84%" },
+      { label: "Total Views", value: "650K+" },
+      { label: "Client Rating", value: "5.0 ★" }
     ],
     deliverables: [
-      "Multi-Node Webhook Processing Architecture",
-      "AI Prompt-Engineered Lead Scorer",
-      "Automated Multi-Stage Email & SMS Followups",
-      "Real-Time Slack & Dashboard Notifications"
+      "Full 4K Cinematic Commercial Master",
+      "Dynamic Sound Design & SFX Track",
+      "Social Teasers & Story Cutdowns",
+      "Custom Graphic Lower Thirds"
     ],
-    liveUrl: "#ai-automation-demo"
-  },
-  {
-    id: "ai-calling-agent",
-    title: "AI Voice Calling Agent",
-    client: "Real Estate & Healthcare B2C",
-    category: "ai-automation",
-    categoryLabel: "AI & Automation",
-    subtitle: "Human-Grade Autonomous Inbound & Outbound Calling System",
-    description: "Built an ultra-low latency voice AI agent capable of holding natural phone conversations, booking calendar appointments, and qualifying prospects 24/7.",
-    fullDescription: "Deployed voice conversational agents with natural human intonation, real-time sentiment analysis, live calendar booking, and automatic CRM call transcription. Handles over 1,000+ simultaneous phone calls seamlessly.",
-    image: "assets/images/ai_calling_agent_mockup.jpg",
-    tags: ["Voice AI", "Telephony Integration", "Appointment Booking", "Live Transcription"],
-    metrics: [
-      { label: "Call Answer Rate", value: "100%" },
-      { label: "Cost Reduction", value: "72%" },
-      { label: "Appointments Booked", value: "850+/mo" }
-    ],
-    deliverables: [
-      "Conversational Voice AI Model Pipeline",
-      "Real-Time Speech-To-Text & TTS Sync",
-      "Google Calendar & Calendly Integration",
-      "Sentiment & Intent Analysis Dashboard"
-    ],
-    liveUrl: "#ai-voice-demo"
+    liveUrl: "#video-commercial-demo"
   },
   {
     id: "ugc-ad-campaign",
@@ -161,17 +137,12 @@ const SKILLS_DATA = {
     { name: "React.js & Components", icon: "fa-brands fa-react", category: "web" },
     { name: "Responsive UI/UX Design", icon: "fa-solid fa-mobile-screen", category: "web" },
     { name: "Performance Optimization", icon: "fa-solid fa-gauge-high", category: "web" },
-    { name: "AI Chatbots & Agents", icon: "fa-solid fa-robot", category: "ai" },
-    { name: "AI Calling / Voice Agents", icon: "fa-solid fa-phone-volume", category: "ai" },
-    { name: "Workflow Automations", icon: "fa-solid fa-diagram-project", category: "ai" },
-    { name: "Make / Zapier Webhooks", icon: "fa-solid fa-bolt", category: "ai" },
-    { name: "Prompt Engineering", icon: "fa-solid fa-brain", category: "ai" },
-    { name: "OpenAI / Gemini APIs", icon: "fa-solid fa-microchip", category: "ai" },
     { name: "Video Editing (Premiere / CapCut)", icon: "fa-solid fa-film", category: "creative" },
     { name: "High-CTR Thumbnail Design", icon: "fa-solid fa-image", category: "creative" },
     { name: "Social Media Post Design", icon: "fa-solid fa-palette", category: "creative" },
     { name: "Viral UGC Ad Creatives", icon: "fa-solid fa-video", category: "creative" },
     { name: "Commercials & Storyboarding", icon: "fa-solid fa-clapperboard", category: "creative" },
+    { name: "Sound Design & Motion FX", icon: "fa-solid fa-wand-magic-sparkles", category: "creative" },
     { name: "Social Media Management", icon: "fa-solid fa-share-nodes", category: "marketing" },
     { name: "Content Strategy & Funnels", icon: "fa-solid fa-bullseye", category: "marketing" },
     { name: "Brand Presence & Growth", icon: "fa-solid fa-arrow-trend-up", category: "marketing" }

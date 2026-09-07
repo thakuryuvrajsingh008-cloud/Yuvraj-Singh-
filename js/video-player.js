@@ -5,6 +5,17 @@
 
 const VIDEO_SHOWCASE_DATA = [
   {
+    id: "reel-featured-edit",
+    title: "Featured Video Edit & Commercial Reel",
+    category: "Commercial & Video Editing",
+    duration: "0:45",
+    views: "520K+",
+    poster: "assets/images/waffle_paradise_mockup.jpg",
+    videoUrl: "assets/videos/my_reel.mp4",
+    fallbackUrl: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyBlazes.mp4",
+    description: "High-impact video editing with kinetic typography, sound design, beat drops, and color grading for modern social media ads."
+  },
+  {
     id: "reel-waffle",
     title: "The Waffle Paradise — Crave Story",
     category: "Food & Beverage Commercial",
@@ -23,16 +34,6 @@ const VIDEO_SHOWCASE_DATA = [
     poster: "assets/images/ace_factor_mockup.jpg",
     videoUrl: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
     description: "High-octane workout montage with kinetic typography, beat drops, and dark obsidian lighting highlights for Aligarh's biggest gym."
-  },
-  {
-    id: "reel-ai-agent",
-    title: "Aurora Voice AI — Live Inbound Demo",
-    category: "AI SaaS Product Reel",
-    duration: "0:35",
-    views: "210K+",
-    poster: "assets/images/ai_calling_agent_mockup.jpg",
-    videoUrl: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyBlazes.mp4",
-    description: "Product demonstration highlighting sub-500ms conversational latency, automated appointment booking, and CRM audio transcription."
   }
 ];
 
@@ -98,7 +99,7 @@ class AuroraVideoPlayer {
         const videoId = card.dataset.videoId;
         const videoData = VIDEO_SHOWCASE_DATA.find((v) => v.id === videoId);
         if (videoData) {
-          this.openModal(videoData.videoUrl, videoData.title, videoData.description);
+          this.openModal(videoData.videoUrl, videoData.title, videoData.description, videoData.fallbackUrl);
         }
       }
     });
@@ -158,8 +159,14 @@ class AuroraVideoPlayer {
     this.openModal(fileUrl, `Uploaded Reel: ${file.name}`, `Custom preview loaded for ${file.name} (${(file.size / (1024 * 1024)).toFixed(1)} MB). Ready to embed permanently!`);
   }
 
-  openModal(url, title, desc) {
+  openModal(url, title, desc, fallbackUrl = null) {
     if (!this.modal || !this.videoElement) return;
+    this.videoElement.onerror = () => {
+      if (fallbackUrl && this.videoElement.src !== fallbackUrl) {
+        this.videoElement.src = fallbackUrl;
+        this.videoElement.play().catch(() => {});
+      }
+    };
     this.videoElement.src = url;
     if (this.modalTitle) this.modalTitle.textContent = title;
     if (this.modalDesc) this.modalDesc.textContent = desc;
