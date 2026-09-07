@@ -5,35 +5,37 @@
 
 const VIDEO_SHOWCASE_DATA = [
   {
-    id: "reel-featured-edit",
-    title: "Featured Video Edit & Commercial Reel",
+    id: "reel-1",
+    title: "Cinematic Video Edit & Commercial Reel #1",
     category: "Commercial & Video Editing",
     duration: "0:45",
     views: "520K+",
     poster: "assets/images/waffle_paradise_mockup.jpg",
-    videoUrl: "assets/videos/my_reel.mp4",
-    fallbackUrl: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyBlazes.mp4",
-    description: "High-impact video editing with kinetic typography, sound design, beat drops, and color grading for modern social media ads."
+    videoUrl: "assets/videos/reel-1.mov",
+    fallbackUrl: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
+    description: "High-impact video editing with dynamic motion graphics, sound design, rhythmic cuts, and high retention pacing."
   },
   {
-    id: "reel-waffle",
-    title: "The Waffle Paradise — Crave Story",
-    category: "Food & Beverage Commercial",
+    id: "reel-2",
+    title: "Viral Hook Reel & Story Edit #2",
+    category: "Social Media & UGC Reel",
     duration: "0:30",
     views: "480K+",
-    poster: "assets/images/waffle_paradise_mockup.jpg",
-    videoUrl: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
-    description: "Cinematic close-up food reel with rhythmic sound design and mouth-watering transitions showcasing Belgian waffles and melting chocolate."
+    poster: "assets/images/ace_factor_mockup.jpg",
+    videoUrl: "assets/videos/reel-2.mov",
+    fallbackUrl: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
+    description: "Short-form video edit engineered with thumb-stopping 3-second hook, speed ramps, and engaging kinetic captions."
   },
   {
-    id: "reel-fitness",
-    title: "Ace Factor Fitness — Floor Energy",
-    category: "Brand Film & Gym Commercial",
-    duration: "0:45",
-    views: "320K+",
-    poster: "assets/images/ace_factor_mockup.jpg",
-    videoUrl: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
-    description: "High-octane workout montage with kinetic typography, beat drops, and dark obsidian lighting highlights for Aligarh's biggest gym."
+    id: "reel-3",
+    title: "Brand Film & Visual Showcase #3",
+    category: "Brand Film & Motion",
+    duration: "0:40",
+    views: "360K+",
+    poster: "assets/images/fitless2fitness_mockup.jpg",
+    videoUrl: "assets/videos/reel-3.mov",
+    fallbackUrl: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyBlazes.mp4",
+    description: "Cinematic visual montage with color grading, transitions, audio mastering, and direct-response framing."
   }
 ];
 

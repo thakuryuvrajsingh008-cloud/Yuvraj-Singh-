@@ -21,22 +21,23 @@ class ParticleEngine {
   init() {
     this.resize();
     this.particles = [];
-    const count = window.innerWidth < 768 ? 30 : this.numberOfParticles;
+    const isMobile = window.innerWidth < 768;
+    const count = isMobile ? 22 : this.numberOfParticles;
     for (let i = 0; i < count; i++) {
-      const size = Math.random() * 2.2 + 1;
-      const x = Math.random() * this.canvas.width;
-      const y = Math.random() * this.canvas.height;
-      const speedX = (Math.random() - 0.5) * 0.7;
-      const speedY = (Math.random() - 0.5) * 0.7;
+      const size = Math.random() * 2 + 1;
+      const x = Math.random() * (this.canvas.width || window.innerWidth);
+      const y = Math.random() * (this.canvas.height || 600);
+      const speedX = (Math.random() - 0.5) * (isMobile ? 0.4 : 0.7);
+      const speedY = (Math.random() - 0.5) * (isMobile ? 0.4 : 0.7);
       const color = this.colors[Math.floor(Math.random() * this.colors.length)];
       this.particles.push(new Particle(x, y, size, speedX, speedY, color, this));
     }
   }
 
   resize() {
-    if (!this.canvas) return;
-    this.canvas.width = this.canvas.parentElement.offsetWidth;
-    this.canvas.height = this.canvas.parentElement.offsetHeight;
+    if (!this.canvas || !this.canvas.parentElement) return;
+    this.canvas.width = this.canvas.parentElement.clientWidth || window.innerWidth;
+    this.canvas.height = this.canvas.parentElement.clientHeight || this.canvas.parentElement.offsetHeight || window.innerHeight;
   }
 
   setupEventListeners() {

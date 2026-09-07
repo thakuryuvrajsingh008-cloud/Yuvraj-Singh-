@@ -105,23 +105,15 @@
   </header>
 
   <!-- Mobile Drawer Menu -->
-  <div id="mobileNavDrawer"
-    style="position: fixed; inset: 0; background: rgba(7,9,14,0.96); backdrop-filter: blur(20px); z-index: 99; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 26px; transform: translateY(-100%); transition: transform 0.4s var(--ease-out);">
-    <a href="#home" class="mobile-nav-link"
-      style="font-family: var(--font-display); font-size: 1.6rem; font-weight: 700; color: #fff;">Home</a>
-    <a href="#services" class="mobile-nav-link"
-      style="font-family: var(--font-display); font-size: 1.6rem; font-weight: 700; color: #fff;">Services</a>
-    <a href="#work" class="mobile-nav-link"
-      style="font-family: var(--font-display); font-size: 1.6rem; font-weight: 700; color: #fff;">Work</a>
-    <a href="#skills" class="mobile-nav-link"
-      style="font-family: var(--font-display); font-size: 1.6rem; font-weight: 700; color: #fff;">Skills</a>
-    <a href="#process" class="mobile-nav-link"
-      style="font-family: var(--font-display); font-size: 1.6rem; font-weight: 700; color: #fff;">Process</a>
-    <a href="#about" class="mobile-nav-link"
-      style="font-family: var(--font-display); font-size: 1.6rem; font-weight: 700; color: #fff;">About</a>
-    <a href="#contact" class="mobile-nav-link"
-      style="font-family: var(--font-display); font-size: 1.6rem; font-weight: 700; color: #fff;">Contact</a>
-    <a href="#contact" class="btn-primary" style="margin-top: 16px;">Let's Work Together</a>
+  <div id="mobileNavDrawer" class="mobile-nav-drawer" aria-label="Mobile Navigation">
+    <a href="#home" class="mobile-nav-link">Home</a>
+    <a href="#services" class="mobile-nav-link">Services</a>
+    <a href="#work" class="mobile-nav-link">Work</a>
+    <a href="#skills" class="mobile-nav-link">Skills</a>
+    <a href="#process" class="mobile-nav-link">Process</a>
+    <a href="#about" class="mobile-nav-link">About</a>
+    <a href="#contact" class="mobile-nav-link">Contact</a>
+    <a href="#contact" class="btn-primary" style="margin-top: 12px;">Let's Work Together</a>
   </div>
 
   <main>
@@ -193,10 +185,12 @@
           </div>
         </div>
       </div>
-      <!-- ============================================================
+    </section>
+
+    <!-- ============================================================
          2. SERVICES SECTION ("WHAT I DO")
     ============================================================ -->
-      <section id="services" class="section">
+    <section id="services" class="section">
         <div class="container">
           <div class="section-head center reveal">
             <div class="eyebrow center">WHAT I DO</div>

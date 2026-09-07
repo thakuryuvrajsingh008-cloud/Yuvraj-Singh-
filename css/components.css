@@ -137,15 +137,63 @@
 
 .mobile-toggle {
   display: none;
-  width: 42px;
-  height: 42px;
-  border-radius: 10px;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
   background: var(--bg-surface);
   border: 1px solid var(--border-glass);
   color: var(--text-primary);
   font-size: 1.25rem;
   align-items: center;
   justify-content: center;
+  transition: all 0.25s ease;
+  z-index: 1001;
+}
+
+.mobile-toggle:hover {
+  background: var(--accent-indigo);
+  color: #fff;
+  border-color: var(--accent-indigo);
+}
+
+/* Mobile Drawer Menu */
+.mobile-nav-drawer {
+  position: fixed;
+  inset: 0;
+  background: rgba(7, 9, 14, 0.98);
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  transform: translateY(-100%);
+  opacity: 0;
+  pointer-events: none;
+  transition: transform 0.4s var(--ease-out), opacity 0.3s ease;
+}
+
+.mobile-nav-drawer.active {
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.mobile-nav-link {
+  font-family: var(--font-display);
+  font-size: 1.45rem;
+  font-weight: 700;
+  color: #f1f5f9;
+  padding: 6px 16px;
+  border-radius: var(--radius-sm);
+  transition: all 0.2s ease;
+}
+
+.mobile-nav-link:hover {
+  color: var(--accent-cyan);
+  transform: scale(1.08);
 }
 
 /* ============================================================
@@ -1348,7 +1396,7 @@
 }
 
 /* ============================================================
-   17. RESPONSIVE QUERIES
+   17. COMPREHENSIVE RESPONSIVE DESIGN SYSTEM
 ============================================================ */
 @media (max-width: 1100px) {
   .process-timeline {
@@ -1366,6 +1414,7 @@
   }
   .about-grid, .contact-grid {
     grid-template-columns: 1fr;
+    gap: 36px;
   }
 }
 
@@ -1376,6 +1425,9 @@
   .mobile-toggle {
     display: flex;
   }
+  .btn-nav-cta {
+    display: none;
+  }
   .video-showcase-grid {
     grid-template-columns: 1fr;
   }
@@ -1385,26 +1437,172 @@
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 768px) {
   .container {
-    padding: 0 18px;
+    padding: 0 20px;
   }
   .section {
-    padding: 80px 0;
+    padding: 70px 0;
   }
-  .services-grid, .projects-grid {
-    grid-template-columns: 1fr;
+  .hero-section {
+    padding-top: 110px;
+    padding-bottom: 50px;
+    min-height: auto;
+  }
+  .hero-title {
+    font-size: clamp(2.3rem, 8vw, 3.6rem);
+    line-height: 1.1;
+  }
+  .hero-headline-animated {
+    font-size: clamp(1.35rem, 5.5vw, 2.2rem);
+    min-height: 2.2em;
+    margin-bottom: 16px;
+  }
+  .hero-desc {
+    font-size: 1rem;
+    line-height: 1.65;
+    margin-bottom: 28px;
+  }
+  .hero-cta-group {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    gap: 12px;
+    margin-bottom: 32px;
+  }
+  .hero-cta-group .btn-primary,
+  .hero-cta-group .btn-secondary {
+    width: 100%;
+    padding: 15px 24px;
+    font-size: 0.94rem;
   }
   .stats-strip {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    padding: 18px 14px;
+    margin-top: 28px;
+  }
+  .stat-item + .stat-item::before {
+    display: none;
+  }
+  .stat-number {
+    font-size: 1.85rem;
+  }
+  .stat-label {
+    font-size: 0.72rem;
+  }
+  .services-grid {
     grid-template-columns: 1fr;
+    gap: 18px;
+  }
+  .service-card {
+    padding: 26px 20px;
+  }
+  .portfolio-filter-tabs,
+  .skills-nav-tabs {
+    gap: 8px;
+    margin-bottom: 28px;
+  }
+  .filter-btn,
+  .skill-tab-btn {
+    padding: 8px 16px;
+    font-size: 0.84rem;
+  }
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+  .skills-container {
+    gap: 10px;
+  }
+  .skill-badge {
+    padding: 10px 16px;
+    font-size: 0.88rem;
+    gap: 8px;
+  }
+  .video-showcase-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .video-drop-zone {
+    padding: 30px 18px;
+  }
+  .process-timeline {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .process-timeline::before {
+    display: none;
+  }
+  .process-card {
+    padding: 24px 20px;
+  }
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+  .profile-card {
+    padding: 24px 20px;
   }
   .why-grid {
     grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .cta-banner {
+    padding: 40px 20px;
+  }
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .contact-info-card,
+  .contact-form-card {
+    padding: 24px 18px;
   }
   .form-grid {
     grid-template-columns: 1fr;
+    gap: 14px;
   }
-  .contact-form-card, .contact-info-card, .modal-body {
-    padding: 24px;
+  .form-control {
+    font-size: 16px !important; /* Prevents iOS Safari auto-zoom */
+  }
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+  .modal-container {
+    max-width: 95vw;
+    margin: 16px auto;
+  }
+  .modal-body {
+    padding: 22px 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 2.1rem;
+  }
+  .hero-headline-animated {
+    font-size: 1.22rem;
+  }
+  .stats-strip {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 16px 12px;
+    gap: 10px;
+  }
+  .stat-number {
+    font-size: 1.55rem;
+  }
+  .stat-label {
+    font-size: 0.68rem;
+  }
+  .brand-logo {
+    font-size: 1.15rem;
+    gap: 8px;
+  }
+  .brand-logo-icon {
+    width: 36px;
+    height: 36px;
   }
 }
