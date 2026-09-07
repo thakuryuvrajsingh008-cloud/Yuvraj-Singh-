@@ -4,19 +4,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Yuvraj Singh Jadaun — Aurora Studios | Web Developer &amp; Creative Digital Specialist</title>
+  <title>Yuvraj Singh | Web Developer, Creative Designer &amp; Video Specialist</title>
 
   <!-- SEO & Meta Tags -->
   <meta name="description"
-    content="Yuvraj Singh Jadaun is a Web Developer, Creative Specialist, and Video Editor at Aurora Studios in Aligarh, UP, India. Building modern websites, viral video edits, and high-converting digital experiences.">
+    content="Yuvraj Singh is a Web Developer, Creative Specialist, and Video Editor in Aligarh, UP, India. Building modern websites, viral video edits, and high-converting digital experiences.">
   <meta name="keywords"
-    content="Yuvraj Singh Jadaun, Aurora Studios, Web Developer Aligarh, Video Editing, Thumbnail Design, Social Media Management, UGC Reels, Waffle Paradise Aligarh, Ace Factor Fitness, Fitless 2 Fitness">
-  <meta name="author" content="Yuvraj Singh Jadaun">
+    content="Yuvraj Singh, Web Developer Aligarh, Video Editing, Thumbnail Design, Social Media Management, UGC Reels, Waffle Paradise Aligarh, Ace Factor Fitness, Fitless 2 Fitness">
+  <meta name="author" content="Yuvraj Singh">
   <meta name="theme-color" content="#080808">
 
   <!-- OpenGraph / Social Sharing -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Yuvraj Singh Jadaun — Aurora Studios | Web Developer &amp; Creative Specialist">
+  <meta property="og:title" content="Yuvraj Singh | Web Developer &amp; Creative Specialist">
   <meta property="og:description"
     content="Building Digital Experiences That Get Attention. Modern websites, viral video editing, creative design, and high-converting brand campaigns.">
   <meta property="og:image" content="assets/images/waffle_paradise_mockup.jpg">
@@ -32,9 +32,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
   <!-- Core Stylesheets -->
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/animations.css">
-  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/main.css?v=7">
+  <link rel="stylesheet" href="css/animations.css?v=7">
+  <link rel="stylesheet" href="css/components.css?v=7">
 </head>
 
 <body>
@@ -52,9 +52,9 @@
   ============================================================ -->
   <header id="siteHeader" class="site-header">
     <div class="container nav-wrap">
-      <a href="#home" class="brand-logo" aria-label="Aurora Studios Home">
+      <a href="#home" class="brand-logo" aria-label="Yuvraj Singh Portfolio">
         <div class="brand-logo-icon">
-          <img src="assets/images/logo.png" alt="Aurora Studios Logo" class="brand-logo-img"
+          <img src="assets/images/logo.png?v=3" alt="Yuvraj Singh Logo" class="brand-logo-img"
             onerror="this.style.display='none'; if(this.nextElementSibling) this.nextElementSibling.style.display='block';">
           <svg class="aurora-svg-logo" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"
             style="display: none;">
@@ -80,7 +80,7 @@
             <polygon points="24,11 25.5,13.5 24,16 22.5,13.5" fill="#FFFFFF" />
           </svg>
         </div>
-        <div class="brand-text">AURORA <span>STUDIOS</span></div>
+        <div class="brand-text">YUVRAJ <span>SINGH</span></div>
       </a>
 
       <!-- Desktop Nav Menu -->
@@ -88,6 +88,7 @@
         <a href="#home" class="nav-link active">Home</a>
         <a href="#services" class="nav-link">Services</a>
         <a href="#work" class="nav-link">Work</a>
+        <a href="#videos" class="nav-link">Videos</a>
         <a href="#skills" class="nav-link">Skills</a>
         <a href="#process" class="nav-link">Process</a>
         <a href="#about" class="nav-link">About</a>
@@ -109,6 +110,7 @@
     <a href="#home" class="mobile-nav-link">Home</a>
     <a href="#services" class="mobile-nav-link">Services</a>
     <a href="#work" class="mobile-nav-link">Work</a>
+    <a href="#videos" class="mobile-nav-link">Videos</a>
     <a href="#skills" class="mobile-nav-link">Skills</a>
     <a href="#process" class="mobile-nav-link">Process</a>
     <a href="#about" class="mobile-nav-link">About</a>
@@ -136,7 +138,7 @@
         <div class="eyebrow reveal delay-1">HELLO, I'M</div>
 
         <h1 class="hero-title reveal delay-2">
-          YUVRAJ SINGH <span class="gradient-text">JADAUN</span>
+          YUVRAJ SINGH
         </h1>
 
         <!-- Animated Cycling Title -->
@@ -345,8 +347,8 @@
             <div class="eyebrow center">FEATURED WORK</div>
             <h2>A Selection of <span class="gradient-text">Digital Experiences</span> &amp; Creative Work</h2>
             <p class="section-subtitle">
-              Explore recent client websites, high-converting video edits, and creative brand campaigns built by Aurora
-              Studios.
+              Explore recent client websites, high-converting video edits, and creative brand campaigns built by Yuvraj
+              Singh.
             </p>
           </div>
 
@@ -365,7 +367,44 @@
       </section>
 
       <!-- ============================================================
-         4. SKILLS SECTION ("MY DIGITAL TOOLKIT")
+         4. DEDICATED VIDEO REELS & COMMERCIALS SHOWCASE
+    ============================================================ -->
+      <section id="videos" class="section">
+        <div class="container">
+          <div class="section-head center reveal">
+            <div class="eyebrow center">VIRAL VIDEO REELS &amp; COMMERCIALS</div>
+            <h2>Visual Motion That <span class="gradient-text">Captivates &amp; Converts</span></h2>
+            <p class="section-subtitle">
+              Click any reel below to play high-retention video edits, viral commercial cuts, and creative short-form media crafted for maximum engagement.
+            </p>
+          </div>
+
+          <!-- Video Reels Showcase Grid -->
+          <div id="videoShowcaseGrid" class="video-showcase-grid">
+            <!-- Rendered dynamically by js/video-player.js -->
+          </div>
+
+          <!-- Interactive Video Upload & Test Center -->
+          <div class="video-drop-zone reveal" id="videoDropZone">
+            <input type="file" id="customVideoInput" accept="video/mp4,video/quicktime,video/webm,.mov,.mp4" style="display: none;">
+            <div style="font-size: 2.2rem; color: var(--accent-cyan); margin-bottom: 12px;">
+              <i class="fa-solid fa-cloud-arrow-up"></i>
+            </div>
+            <h4 style="font-size: 1.15rem; color: #fff; margin-bottom: 6px;">
+              Preview Custom Video / Reel Edit
+            </h4>
+            <p style="color: var(--text-secondary); font-size: 0.88rem; max-width: 520px; margin: 0 auto 14px;">
+              Drag &amp; drop any <code style="color: var(--accent-pink); font-family: var(--font-mono);">.mp4</code> or <code style="color: var(--accent-cyan); font-family: var(--font-mono);">.mov</code> file here or click to test instant browser playback.
+            </p>
+            <span class="btn-secondary" style="font-size: 0.82rem; padding: 6px 18px; pointer-events: none;">
+              <i class="fa-solid fa-file-video"></i> Select Video File
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================
+         5. SKILLS SECTION ("MY DIGITAL TOOLKIT")
     ============================================================ -->
       <section id="skills" class="section">
         <div class="container">
@@ -393,16 +432,15 @@
       </section>
 
       <!-- ============================================================
-         5. INTERACTIVE AI AGENT SANDBOX
+         6. INTERACTIVE AI ASSISTANT SANDBOX
     ============================================================ -->
       <section id="ai-demo" class="section" style="background: rgba(13, 17, 26, 0.6);">
         <div class="container">
           <div class="section-head center reveal">
             <div class="eyebrow center">TEST DRIVE AI</div>
-            <h2>Try the <span class="gradient-text">Aurora AI Assistant</span> Live</h2>
+            <h2>Try My <span class="gradient-text">AI Portfolio Assistant</span> Live</h2>
             <p class="section-subtitle">
-              Experience our conversational assistant simulator. Ask about our services, pricing, or request a project
-              quotation.
+              Experience my custom conversational portfolio assistant. Ask about my services, pricing, or request a project quotation.
             </p>
           </div>
 
@@ -414,7 +452,7 @@
                   <i class="fa-solid fa-robot"></i>
                 </div>
                 <div>
-                  <h4 style="font-size: 1rem; color: #fff; margin-bottom: 2px;">Aurora AI Smart Assistant</h4>
+                  <h4 style="font-size: 1rem; color: #fff; margin-bottom: 2px;">Yuvraj's AI Portfolio Assistant</h4>
                   <div
                     style="display: flex; align-items: center; gap: 6px; font-size: 0.76rem; color: #34d399; font-family: var(--font-mono);">
                     <span style="width: 6px; height: 6px; border-radius: 50%; background: #34d399;"></span> Online &amp;
@@ -427,8 +465,8 @@
 
             <div id="chatbotMessages" class="chatbot-messages-area">
               <div class="chat-bubble bot">
-                👋 Hey there! I'm Aurora AI, Yuvraj's digital assistant. How can I help you elevate your brand today?
-                Feel free to ask about our web development, video editing, or creative design packages!
+                👋 Hey there! I'm Yuvraj's digital assistant. How can I help you elevate your brand today?
+                Feel free to ask about web development, video editing, or creative design packages!
               </div>
             </div>
 
@@ -509,7 +547,7 @@
 
       <!-- ============================================================
          8. ABOUT ME SECTION
-    ============================================================ -->
+      ============================================================ -->
       <section id="about" class="section">
         <div class="container about-grid">
           <!-- Profile Card -->
@@ -521,8 +559,8 @@
                 </div>
               </div>
               <div>
-                <h3 class="profile-name">Yuvraj Singh Jadaun</h3>
-                <div class="profile-role">Founder &bull; Aurora Studios</div>
+                <h3 class="profile-name">Yuvraj Singh</h3>
+                <div class="profile-role">Web Developer &bull; Creative Specialist</div>
                 <div style="font-size: 0.8rem; color: var(--text-muted); margin-top: 4px;">Aligarh, Uttar Pradesh, India
                   📍</div>
               </div>
@@ -553,7 +591,7 @@
             </h2>
 
             <p style="color: var(--text-secondary); font-size: 1.05rem; line-height: 1.75; margin-bottom: 18px;">
-              I'm <strong>Yuvraj Singh Jadaun</strong>, a web developer and digital creative focused on helping
+              I'm <strong>Yuvraj Singh</strong>, a web developer and digital creative focused on helping
               businesses build a strong, high-converting online presence.
             </p>
 
@@ -583,15 +621,15 @@
       </section>
 
       <!-- ============================================================
-         9. WHY WORK WITH ME ("WHY AURORA STUDIOS?")
-    ============================================================ -->
+         9. WHY WORK WITH ME
+      ============================================================ -->
       <section class="section" style="background: rgba(10, 13, 20, 0.5);">
         <div class="container">
           <div class="section-head center reveal">
-            <div class="eyebrow center">WHY CHOOSE US</div>
-            <h2>Why Partner With <span class="gradient-text">Aurora Studios?</span></h2>
+            <div class="eyebrow center">WHY CHOOSE ME</div>
+            <h2>Why Partner With <span class="gradient-text">Yuvraj Singh?</span></h2>
             <p class="section-subtitle">
-              We deliver results, not just deliverables. Here is what sets our studio apart from traditional agencies.
+              I deliver real results, not just deliverables. Here is what sets my work apart from traditional agencies.
             </p>
           </div>
 
@@ -666,142 +704,88 @@
     ============================================================ -->
       <section id="contact" class="section" style="background: rgba(8, 10, 16, 0.8);">
         <div class="container">
-          <div class="section-head reveal">
-            <div class="eyebrow">LET'S TALK</div>
+          <div class="section-head center reveal">
+            <div class="eyebrow center">LET'S TALK</div>
             <h2>Get In Touch &bull; <span class="gradient-text">Launch Your Project</span></h2>
             <p class="section-subtitle">
-              Fill out the form below or connect directly via WhatsApp, phone, or LinkedIn. We typically respond within
-              minutes!
+              Connect directly via WhatsApp, phone, email, or LinkedIn. I typically respond within minutes!
             </p>
           </div>
 
-          <div class="contact-grid">
-            <!-- Contact Info Cards -->
-            <div class="contact-info-card reveal">
-              <h3 style="font-size: 1.45rem; margin-bottom: 24px; color: #fff;">Direct Channels</h3>
-
-              <!-- Phone / WhatsApp -->
-              <div class="contact-detail-item">
-                <div class="contact-icon">
-                  <i class="fa-solid fa-phone"></i>
-                </div>
-                <div>
-                  <div class="contact-label">Phone &bull; WhatsApp</div>
-                  <div class="contact-val">
-                    <a href="tel:+919761203713"
-                      style="color: #fff; text-decoration: underline; text-underline-offset: 4px;">+91 9761203713</a>
-                  </div>
-                  <a href="https://wa.me/919761203713?text=Hi%20Yuvraj!%20I'm%20interested%20in%20working%20with%20Aurora%20Studios."
-                    target="_blank" rel="noopener"
-                    style="display: inline-flex; align-items: center; gap: 6px; font-size: 0.82rem; color: #34d399; margin-top: 4px; font-weight: 600;">
-                    <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp &rarr;
-                  </a>
-                </div>
+          <!-- Master Contact Box -->
+          <div class="contact-box reveal delay-1">
+            <div class="contact-box-header">
+              <div class="status-chip" style="margin-bottom: 0;">
+                <span class="dot"></span> Available for Selected Projects
               </div>
+              <div class="contact-response-badge">
+                <i class="fa-solid fa-bolt" style="color: #fbbf24;"></i> Direct Reply &lt; 30 Mins
+              </div>
+            </div>
+
+            <div class="contact-box-grid">
+              <!-- WhatsApp / Phone -->
+              <a href="https://wa.me/919761203713?text=Hi%20Yuvraj!%20I'm%20interested%20in%20discussing%20a%20project." 
+                 target="_blank" rel="noopener" class="contact-card whatsapp-card">
+                <div class="contact-card-icon whatsapp-icon">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </div>
+                <div class="contact-card-body">
+                  <span class="contact-card-label">PHONE &bull; WHATSAPP</span>
+                  <span class="contact-card-value">+91 9761203713</span>
+                  <span class="contact-card-cta">Chat on WhatsApp <i class="fa-solid fa-arrow-right"></i></span>
+                </div>
+              </a>
 
               <!-- Email -->
-              <div class="contact-detail-item">
-                <div class="contact-icon">
+              <a href="mailto:thakuryuvrajsingh008@gmail.com" class="contact-card email-card">
+                <div class="contact-card-icon email-icon">
                   <i class="fa-solid fa-envelope"></i>
                 </div>
-                <div>
-                  <div class="contact-label">Email Address</div>
-                  <div class="contact-val">
-                    <a href="mailto:thakuryuvrajsingh008@gmail.com"
-                      style="color: #fff; word-break: break-all;">thakuryuvrajsingh008@gmail.com</a>
-                  </div>
+                <div class="contact-card-body">
+                  <span class="contact-card-label">DIRECT EMAIL</span>
+                  <span class="contact-card-value">thakuryuvrajsingh008@gmail.com</span>
+                  <span class="contact-card-cta">Send Email <i class="fa-solid fa-arrow-right"></i></span>
                 </div>
-              </div>
+              </a>
 
               <!-- LinkedIn -->
-              <div class="contact-detail-item">
-                <div class="contact-icon">
+              <a href="https://www.linkedin.com/in/yuvraj-singh-jadaun-275a92432/" target="_blank" rel="noopener" class="contact-card linkedin-card">
+                <div class="contact-card-icon linkedin-icon">
                   <i class="fa-brands fa-linkedin-in"></i>
                 </div>
-                <div>
-                  <div class="contact-label">LinkedIn Profile</div>
-                  <div class="contact-val">
-                    <a href="https://www.linkedin.com/in/yuvraj-singh-jadaun-275a92432/" target="_blank" rel="noopener"
-                      style="color: var(--accent-cyan);">yuvraj-singh-jadaun &rarr;</a>
-                  </div>
+                <div class="contact-card-body">
+                  <span class="contact-card-label">PROFESSIONAL NETWORK</span>
+                  <span class="contact-card-value">yuvraj-singh-jadaun</span>
+                  <span class="contact-card-cta">Connect on LinkedIn <i class="fa-solid fa-arrow-right"></i></span>
                 </div>
-              </div>
+              </a>
 
-              <!-- Location -->
-              <div class="contact-detail-item" style="margin-bottom: 0;">
-                <div class="contact-icon">
+              <!-- Location / HQ -->
+              <div class="contact-card location-card">
+                <div class="contact-card-icon location-icon">
                   <i class="fa-solid fa-map-location-dot"></i>
                 </div>
-                <div>
-                  <div class="contact-label">Location / Studio HQ</div>
-                  <div class="contact-val">Aligarh, Uttar Pradesh, India</div>
-                  <div style="font-size: 0.82rem; color: var(--text-muted); margin-top: 2px;">Available for remote
-                    clients globally</div>
+                <div class="contact-card-body">
+                  <span class="contact-card-label">BASE LOCATION</span>
+                  <span class="contact-card-value">Aligarh, Uttar Pradesh, India</span>
+                  <span class="contact-card-badge"><span class="pulse-beacon-small"></span> Serving Global Clients</span>
                 </div>
               </div>
             </div>
 
-            <!-- Interactive Contact Form -->
-            <div class="contact-form-card reveal delay-1">
-              <h3 style="font-size: 1.45rem; margin-bottom: 20px; color: #fff;">Send A Project Message</h3>
-
-              <form id="contactForm">
-                <div class="form-grid">
-                  <div class="form-group">
-                    <label for="formName" class="form-label">Your Name *</label>
-                    <input type="text" id="formName" class="form-control" placeholder="John Doe" required>
-                  </div>
-
-                  <div class="form-group">
-                    <label for="formEmail" class="form-label">Your Email *</label>
-                    <input type="email" id="formEmail" class="form-control" placeholder="john@company.com" required>
-                  </div>
-                </div>
-
-                <div class="form-grid">
-                  <div class="form-group">
-                    <label for="formBusiness" class="form-label">Business / Brand Name</label>
-                    <input type="text" id="formBusiness" class="form-control" placeholder="Acme Studios">
-                  </div>
-
-                  <div class="form-group">
-                    <label for="formService" class="form-label">Service Needed *</label>
-                    <select id="formService" class="form-control" required
-                      style="background: var(--bg-dark); color: #fff;">
-                      <option value="" disabled selected>Select a Service</option>
-                      <option value="Web Development & Apps">Web Development &amp; Apps</option>
-                      <option value="Viral Video Editing & Reels">Viral Video Editing &amp; Reels</option>
-                      <option value="Commercials & Video Ads">Commercials &amp; Video Ads</option>
-                      <option value="Thumbnail & Post Designing">Thumbnail &amp; Post Designing</option>
-                      <option value="Social Media Management">Social Media Management</option>
-                      <option value="Full Digital Branding Suite">Full Digital Branding Suite</option>
-                    </select>
-                  </div>
-                </div>
-
-                <div class="form-group">
-                  <label for="formBudget" class="form-label">Project Budget (Approx)</label>
-                  <select id="formBudget" class="form-control" style="background: var(--bg-dark); color: #fff;">
-                    <option value="₹10,000 - ₹25,000">₹10,000 - ₹25,000 (Starter)</option>
-                    <option value="₹25,000 - ₹60,000" selected>₹25,000 - ₹60,000 (Standard Growth)</option>
-                    <option value="₹60,000 - ₹1,50,000">₹60,000 - ₹1,50,000 (Complete Brand &amp; Video)</option>
-                    <option value="₹1,50,000+">₹1,50,000+ (Enterprise / Retainer)</option>
-                  </select>
-                </div>
-
-                <div class="form-group">
-                  <label for="formDetails" class="form-label">Project Details &amp; Goals *</label>
-                  <textarea id="formDetails" class="form-control" rows="4"
-                    placeholder="Tell us about your brand, what you'd like to build or produce, and any specific timelines..."
-                    required></textarea>
-                </div>
-
-                <button type="submit" class="btn-primary" style="width: 100%;">
-                  <i class="fa-solid fa-paper-plane"></i> SEND MESSAGE &amp; CONNECT
-                </button>
-
-                <div id="formStatusMessage" style="display: none;"></div>
-              </form>
+            <!-- Quick Action Bar -->
+            <div class="contact-box-footer">
+              <span class="contact-footer-text">Ready to get started? Tap any channel above or start a conversation directly:</span>
+              <div class="contact-footer-actions">
+                <a href="https://wa.me/919761203713?text=Hi%20Yuvraj!%20I%20want%20to%20hire%20you%20for%20a%20project." 
+                   target="_blank" rel="noopener" class="btn-primary shimmer-effect">
+                  <i class="fa-brands fa-whatsapp"></i> Instant WhatsApp Chat
+                </a>
+                <a href="tel:+919761203713" class="btn-secondary">
+                  <i class="fa-solid fa-phone"></i> Call Direct
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -817,7 +801,7 @@
         <div>
           <a href="#home" class="brand-logo" style="margin-bottom: 16px;">
             <div class="brand-logo-icon">
-              <img src="assets/images/logo.png" alt="Aurora Studios Logo" class="brand-logo-img"
+              <img src="assets/images/logo.png?v=3" alt="Yuvraj Singh Logo" class="brand-logo-img"
                 onerror="this.style.display='none'; if(this.nextElementSibling) this.nextElementSibling.style.display='block';">
               <svg class="aurora-svg-logo" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"
                 style="display: none;">
@@ -831,7 +815,7 @@
                 <polygon points="24,11 25.5,13.5 24,16 22.5,13.5" fill="#FFFFFF" />
               </svg>
             </div>
-            <div class="brand-text">AURORA <span>STUDIOS</span></div>
+            <div class="brand-text">YUVRAJ <span>SINGH</span></div>
           </a>
           <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.65; max-width: 380px;">
             Building modern websites, viral video edits, and high-impact digital experiences that demand attention.
@@ -845,6 +829,7 @@
             <li><a href="#home" class="nav-link">Home</a></li>
             <li><a href="#services" class="nav-link">Services</a></li>
             <li><a href="#work" class="nav-link">Featured Work</a></li>
+            <li><a href="#videos" class="nav-link">Videos &amp; Reels</a></li>
             <li><a href="#skills" class="nav-link">Skills Matrix</a></li>
             <li><a href="#process" class="nav-link">How I Work</a></li>
             <li><a href="#about" class="nav-link">About Yuvraj</a></li>
@@ -870,7 +855,7 @@
             </a>
           </div>
           <p style="font-size: 0.85rem; color: var(--text-muted); font-family: var(--font-mono);">
-            Founder: Yuvraj Singh Jadaun<br>
+            Yuvraj Singh<br>
             HQ: Aligarh, UP, India
           </p>
         </div>
@@ -878,7 +863,7 @@
 
       <div class="footer-bottom">
         <div>
-          &copy; 2026 Aurora Studios &bull; Yuvraj Singh Jadaun. All rights reserved.
+          &copy; 2026 Yuvraj Singh. All rights reserved.
         </div>
         <div style="display: flex; align-items: center; gap: 8px;">
           <span style="font-family: var(--font-mono); font-size: 0.78rem; color: var(--accent-cyan);">Engineered for
@@ -903,11 +888,30 @@
     </div>
   </div>
 
+  <!-- ============================================================
+       VIDEO PLAYER & REEL LIGHTBOX MODAL
+  ============================================================ -->
+  <div id="videoModal" class="modal-backdrop" role="dialog" aria-modal="true">
+    <div class="modal-container" style="max-width: 840px; background: #07090e;">
+      <button type="button" id="btnCloseVideoModal" class="modal-close-btn" aria-label="Close video modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div style="padding: 24px;">
+        <div class="video-modal-player-wrap">
+          <video id="modalVideoPlayer" controls playsinline preload="metadata"></video>
+        </div>
+        <h3 id="videoModalTitle" style="font-size: 1.4rem; color: #fff; margin-bottom: 8px;">Video Title</h3>
+        <p id="videoModalDesc" style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6;">Description</p>
+      </div>
+    </div>
+  </div>
+
   <!-- JavaScript Modules -->
-  <script src="js/portfolio-data.js"></script>
-  <script src="js/particles.js"></script>
-  <script src="js/chatbot-demo.js"></script>
-  <script src="js/app.js"></script>
+  <script src="js/portfolio-data.js?v=7"></script>
+  <script src="js/particles.js?v=7"></script>
+  <script src="js/chatbot-demo.js?v=7"></script>
+  <script src="js/video-player.js?v=7"></script>
+  <script src="js/app.js?v=7"></script>
 </body>
 
 </html>

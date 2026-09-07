@@ -1,5 +1,5 @@
 /* ============================================================
-   AURORA STUDIOS — APPLICATION CONTROLLER (APP.JS)
+   YUVRAJ SINGH — APPLICATION CONTROLLER (APP.JS)
    Main Interactive Controller, Filters, Modals, SEO & Forms
 ============================================================ */
 
@@ -381,7 +381,7 @@ function initContactForm() {
 
     // Build WhatsApp message payload
     const textLines = [
-      `*New Project Enquiry — Aurora Studios*`,
+      `*New Project Enquiry — Yuvraj Singh Portfolio*`,
       ``,
       `👤 *Name:* ${name}`,
       `📧 *Email:* ${email}`,
@@ -390,7 +390,7 @@ function initContactForm() {
       `💰 *Estimated Budget:* ${budget}`,
       `📝 *Project Details:* ${details}`,
       ``,
-      `_Sent via Aurora Studios Portfolio Contact Form_`
+      `_Sent via Yuvraj Singh Portfolio Contact Form_`
     ];
 
     const waUrl = `https://wa.me/919761203713?text=${encodeURIComponent(textLines.join('\n'))}`;

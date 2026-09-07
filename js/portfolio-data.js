@@ -1,5 +1,5 @@
 /* ============================================================
-   AURORA STUDIOS — PORTFOLIO DATA (PORTFOLIO-DATA.JS)
+   YUVRAJ SINGH — PORTFOLIO DATA (PORTFOLIO-DATA.JS)
    Real Client Work & High-Converting Digital Solutions
 ============================================================ */
 

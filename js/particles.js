@@ -1,5 +1,5 @@
 /* ============================================================
-   AURORA STUDIOS — PARTICLES ENGINE (PARTICLES.JS)
+   YUVRAJ SINGH — PARTICLES ENGINE (PARTICLES.JS)
    60 FPS Interactive Particle Swarm & Ambient Cyber Lines
 ============================================================ */
 

@@ -1,9 +1,9 @@
 /* ============================================================
-   AURORA STUDIOS — AI AGENT DEMO SIMULATOR (CHATBOT-DEMO.JS)
+   YUVRAJ SINGH — AI AGENT DEMO SIMULATOR (CHATBOT-DEMO.JS)
    Interactive Conversational Sandbox for Website Visitors
 ============================================================ */
 
-class AuroraChatbotDemo {
+class PortfolioChatbotDemo {
   constructor() {
     this.messagesContainer = document.getElementById('chatbotMessages');
     this.inputField = document.getElementById('chatbotInput');
@@ -13,10 +13,10 @@ class AuroraChatbotDemo {
     if (!this.messagesContainer || !this.inputField) return;
 
     this.knowledgeBase = {
-      services: "At Aurora Studios, Yuvraj offers: 🚀 Modern Web & Web App Development, 🎬 Viral Video Editing & UGC Reels, 🎨 High-CTR Thumbnail & Post Design, 📱 Social Media Management, and 💼 High-Impact Commercials & Ads.",
-      pricing: "Pricing depends on project scope and deliverables. Web development and video production packages are tailored to your business goals. You can get an instant custom quote using our contact form below or on WhatsApp (+91 9761203713)!",
-      calling: "We build high-converting landing pages, creative video commercials, and digital branding assets designed to convert visitors into paying clients.",
-      websites: "We build ultra-fast, modern, responsive websites and web applications tailored for conversion. Check out our featured work above including The Waffle Paradise Cafe, Ace Factor Fitness, and Fitless 2 Fitness!",
+      services: "Yuvraj offers: 🚀 Modern Web & Web App Development, 🎬 Viral Video Editing & UGC Reels, 🎨 High-CTR Thumbnail & Post Design, 📱 Social Media Management, and 💼 High-Impact Commercials & Ads.",
+      pricing: "Pricing depends on project scope and deliverables. Web development and video production packages are tailored to your business goals. You can get an instant custom quote using the contact form below or on WhatsApp (+91 9761203713)!",
+      calling: "Yuvraj builds high-converting landing pages, creative video commercials, and digital branding assets designed to convert visitors into paying clients.",
+      websites: "Yuvraj builds ultra-fast, modern, responsive websites and web applications tailored for conversion. Check out featured work above including The Waffle Paradise Cafe, Ace Factor Fitness, and Fitless 2 Fitness!",
       contact: "You can reach Yuvraj directly via WhatsApp/Phone at +91 9761203713, email at thakuryuvrajsingh008@gmail.com, or through LinkedIn. Based in Aligarh, UP, serving global clients!",
       default: "That sounds like a great project! Yuvraj specializes in combining web development, creative design, and viral video editing to help brands scale fast. Would you like to schedule a quick discovery chat or discuss project requirements?"
     };
@@ -91,7 +91,7 @@ class AuroraChatbotDemo {
     const typing = document.createElement('div');
     typing.id = 'botTypingIndicator';
     typing.className = 'chat-bubble bot';
-    typing.innerHTML = '<span style="opacity:0.6;"><i class="fa-solid fa-ellipsis fa-fade"></i> Aurora AI is typing...</span>';
+    typing.innerHTML = '<span style="opacity:0.6;"><i class="fa-solid fa-ellipsis fa-fade"></i> AI Assistant is typing...</span>';
     this.messagesContainer.appendChild(typing);
     this.scrollToBottom();
   }
@@ -107,5 +107,5 @@ class AuroraChatbotDemo {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  new AuroraChatbotDemo();
+  new PortfolioChatbotDemo();
 });
