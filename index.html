@@ -451,42 +451,6 @@
       </section>
 
       <!-- ============================================================
-         6. VIDEO REEL SHOWCASE & USER UPLOAD CENTER
-    ============================================================ -->
-      <section id="videos" class="section">
-        <div class="container">
-          <div class="section-head center reveal">
-            <div class="eyebrow center">VIDEO REELS &amp; COMMERCIALS</div>
-            <h2>Visual Motion That <span class="gradient-text">Captivates &amp; Converts</span></h2>
-            <p class="section-subtitle">
-              Watch sample video commercial edits below, or preview your custom video reel directly inside our player!
-            </p>
-          </div>
-
-          <div id="videoShowcaseGrid" class="video-showcase-grid">
-            <!-- Injected via video-player.js -->
-          </div>
-
-          <!-- Custom Video Upload / Drop Zone -->
-          <div id="videoDropZone" class="video-drop-zone reveal">
-            <i class="fa-solid fa-cloud-arrow-up"
-              style="font-size: 2.4rem; color: var(--accent-indigo); margin-bottom: 12px;"></i>
-            <h4 style="font-size: 1.15rem; margin-bottom: 6px; color: #fff;">Have video samples to add? Drop them here!
-            </h4>
-            <p style="color: var(--text-secondary); font-size: 0.88rem; max-width: 540px; margin: 0 auto 16px;">
-              Drag &amp; drop any <strong>.mp4 or .webm</strong> video file here to preview your reel in our video
-              player lightbox immediately.
-            </p>
-            <button type="button" class="btn-secondary" style="padding: 10px 24px; font-size: 0.88rem;">
-              <i class="fa-solid fa-folder-open"></i> Browse Video File
-            </button>
-            <input type="file" id="customVideoInput" accept="video/mp4,video/webm,video/quicktime"
-              style="display: none;">
-          </div>
-        </div>
-      </section>
-
-      <!-- ============================================================
          7. PROCESS SECTION ("HOW I WORK")
     ============================================================ -->
       <section id="process" class="section" style="background: rgba(10, 13, 20, 0.5);">
@@ -939,30 +903,10 @@
     </div>
   </div>
 
-  <!-- ============================================================
-       VIDEO PLAYER MODAL
-  ============================================================ -->
-  <div id="videoModal" class="modal-backdrop" role="dialog" aria-modal="true">
-    <div class="modal-container" style="max-width: 840px; background: #07090e;">
-      <button type="button" id="btnCloseVideoModal" class="modal-close-btn" aria-label="Close video modal">
-        <i class="fa-solid fa-xmark"></i>
-      </button>
-      <div style="padding: 24px;">
-        <div style="border-radius: var(--radius-lg); overflow: hidden; background: #000; margin-bottom: 20px;">
-          <video id="modalVideoPlayer" controls style="width: 100%; max-height: 520px; display: block;"></video>
-        </div>
-        <h3 id="videoModalTitle" style="font-size: 1.4rem; color: #fff; margin-bottom: 8px;">Video Title</h3>
-        <p id="videoModalDesc" style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6;">Description
-        </p>
-      </div>
-    </div>
-  </div>
-
   <!-- JavaScript Modules -->
   <script src="js/portfolio-data.js"></script>
   <script src="js/particles.js"></script>
   <script src="js/chatbot-demo.js"></script>
-  <script src="js/video-player.js"></script>
   <script src="js/app.js"></script>
 </body>
 
